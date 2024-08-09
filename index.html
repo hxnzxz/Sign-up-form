@@ -7,33 +7,37 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class = "photos"> something
+    <div class = "photos">
         <div class="logo">
             <img id="odin-logo" src="odin-lined.png" alt="odin-logo">
             ODIN
         </div>
-        <div class = "footer">Photo by Hale West on Unsplash
-
+        <div class = "footer">Photo by <a target = "_blank"href="https://unsplash.com/@haliewestphoto">Hale West</a> 
+            on <a href="https://unsplash.com/" target="_blank">Unsplash</a>
         </div>
     </div>
     <div class="form">
-        <div class="title"> This is just an experiment, you can definitely enter your real information
-            witohut fear of anything ;)
+        <div class="title"> 
+            <div>This is just an experiment, you can definitely enter your real information
+                witohut fear of anything ;)
+            </div>
+            <div>Sign up or log in to get started!</div>
+                
         </div>
 
-        <div class="inputs"> Let's do This
+        <div class="inputs"> Let's do this!
                 <form action="" class="fields">
                     <div>
                         <label for="userFirstName">
                          First Name
                          </label>
-                        <input type="text" id="userFirstName">
+                        <input type="text" id="userFirstName" minlength="2" placeholder="John" pattern="[A-Za-z]">
                     </div>
                     <div>
                         <label for="userLastName">
                         Last Name
                         </label>
-                        <input type="text" id="userLastName">
+                        <input type="text" id="userLastName" minlength="2" placeholder="Doe" pattern="[A-Za-z]">
                     </div>
                 </form>
 
@@ -42,13 +46,14 @@
                         <label for="userEmail">
                          Email
                          </label>
-                        <input type="text" id="userEmail">
+                        <input type="email" id="userEmail" placeholder="JohnDoe@provider.TLD">
                     </div>
                     <div>
                         <label for="userNumber">
                         Phone Number
                         </label>
-                        <input type="text" id="userNumber">
+                        <input type="tel" id="userNumber" maxlength="12" placeholder="123-456-7890"
+                        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
                     </div>
                 </form>
 
@@ -57,20 +62,25 @@
                         <label for="userpass">
                          Password
                          </label>
-                        <input type="text" id="userpass">
+                        <input type="text" id="userpass" minlength="8" placeholder="********">
                     </div>
                     <div>
                         <label for="confirmpass">
                         Confirm Password
                         </label>
-                        <input type="text" id="confirmpass">
+                        <input type="text" id="confirmpass" minlength="8" placeholder="********">
                     </div>
                 </form>
-            <div class="contact"></div>
-            <div class="password"></div>
+
         </div>
 
-        <div class="buttons"> beep</div>
+        <div class="buttons"> 
+            <button type="submit">Create Account</button>
+            <div>
+                Already have an account? <a id="login" target="_blank"
+                href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Log in</a>
+            </div>
+        </div>
     </div>
 </body>
 </html>
